@@ -83,7 +83,7 @@ const loadImages = () => {
                 </button>
                 <button
                   type="button"
-                  class="btn btn-sm btn-outline-secondary hideBtn"
+                  class="btn btn-sm btn-outline-secondary hide-btn"
                 >
                   Hide
                 </button>
@@ -93,17 +93,24 @@ const loadImages = () => {
           </div>
         </div>`;
 
+          //function to remove CARD
+          const hideBtn = div.querySelector(".hide-btn");
+
+          hideBtn.addEventListener("click", () => {
+            row.removeChild(div);
+          });
+
           row.appendChild(div);
         });
       });
+    // .then(()=>{
+    // });
   });
 };
 
 loadImages();
 
-const hideCard = () => {
-  const hideBtn = document.querySelector(".hideBtn");
-  hideBtn.addEventListener("click", () => {
-    alert("ciao");
-  });
-};
+// window.addEventListener("DOMContentLoaded", () => {
+//     loadImages();
+//     hideCard();
+// })
