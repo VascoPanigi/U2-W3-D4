@@ -14,7 +14,8 @@
 // 4) Quando si preme "Hide", l'intera card dovrebbe scomparire.
 // 5) Sostituisci il testo "9 mins" del template delle card con l'id dell'immagine corrispondente.
 // 6) Nella sezione principale aggiungi un campo di ricerca. Usa il valore di questo campo per cercare nuove immagini rimpiazzando quelle esistenti.
-// 7) Cliccare l'immagine o il suo nome farà cambiare pagina verso una di dettaglio dell'immagine. Qui dovrai visualizzare immagine, nome artista e linkare la sua pagina personale. Dai la possibilità all'utente di tornare indietro.
+// 7) Cliccare l'immagine o il suo nome farà cambiare pagina verso una di dettaglio dell'immagine. Qui dovrai visualizzare immagine, nome artista e
+//linkare la sua pagina personale. Dai la possibilità all'utente di tornare indietro.
 // l'endpoint da contattare nella pagina dettaglio è il seguente:
 // GET  https://api.pexels.com/v1/photos/[id-risorsa]
 // Documentazione URLSearchParams: https://developer.mozilla.org/en-US/docs/Web/API/URLSearchParams/URLSearchParams
@@ -114,3 +115,8 @@ loadImages();
 //     loadImages();
 //     hideCard();
 // })
+
+//all'evento di invio del form, io prendo il value
+//e lo inserisco nell'url dell'elemento URL
+
+form.addEventListener("submit", (event) => {});
